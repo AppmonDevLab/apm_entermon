@@ -15,6 +15,13 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".LoginActivity"
+            android:label="@string/title_activity_login"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".MovieActivity" />
+        <activity android:name=".TheatreActivity" />
+        <activity android:name=".UserInfoActivity"></activity>
     </application>
 
 </manifest>
