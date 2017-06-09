@@ -1,1 +1,1 @@
-java -cp .\bin\ MultiThreadServer c:\www 8000
+java -cp .\bin\ SimpleHTTPServer
