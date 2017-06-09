@@ -17,24 +17,21 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:weightSum="1"
-        >
+        android:weightSum="1">
+
         <SearchView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:iconifiedByDefault="false"
-            android:queryHint="input movie"
             android:layout_gravity="top"
+            android:iconifiedByDefault="false"
+            android:queryHint="找电影、影人、影院"
 
-            >
-        </SearchView>
+            ></SearchView>
 
         <ListView
-            android:layout_width="match_parent"
-            android:layout_height="396dp"
             android:id="@+id/list"
-            >
-        </ListView>
+            android:layout_width="match_parent"
+            android:layout_height="396dp"></ListView>
 
 
         <RadioGroup
@@ -42,32 +39,33 @@
 
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
             android:gravity="center"
+            android:orientation="horizontal"
 
-            >
+            android:weightSum="1">
+
             <RadioButton
                 android:id="@+id/rb_home"
-                android:layout_height="wrap_content"
                 android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:text="首页" />
 
             <RadioButton
                 android:id="@+id/rb_theatre"
-                android:layout_height="wrap_content"
                 android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:text="影院" />
 
             <RadioButton
                 android:id="@+id/rb_shop"
-                android:layout_height="wrap_content"
                 android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:text="商城" />
 
             <RadioButton
                 android:id="@+id/rb_me"
-                android:layout_height="wrap_content"
                 android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:text="我的" />
 
 

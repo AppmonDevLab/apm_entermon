@@ -28,20 +28,20 @@ public class MovieActivity extends AppCompatActivity {
         List<Map<String, Object>> m_list = new ArrayList<Map<String, Object>>();
 
         Map<String, Object> map = new HashMap<String, Object>();
-        map.put("title", "G1");
-        map.put("info", "google 1");
+        map.put("title", "加勒比海盗5：死无对证");
+        map.put("info", "无垠瀚海多凶险，誓取神兵争高低");
         map.put("img", R.drawable.jialebihaidao);
         m_list.add(map);
 
         map = new HashMap<String, Object>();
-        map.put("title", "G2");
-        map.put("info", "google 2");
+        map.put("title", "哆啦A梦：大雄的南极大冒险");
+        map.put("info", "盛夏酷热挡不住，前往南极去探险");
         map.put("img", R.drawable.duolaameng);
         m_list.add(map);
 
         map = new HashMap<String, Object>();
-        map.put("title", "G3");
-        map.put("info", "google 3");
+        map.put("title", "美好的意外");
+        map.put("info", "精英淑女变主妇，心灵创伤要呵护");
         map.put("img", R.drawable.meihaodeyiwai);
         m_list.add(map);
         SimpleAdapter adapter = new SimpleAdapter(MovieActivity.this,m_list,R.layout.new_item,
