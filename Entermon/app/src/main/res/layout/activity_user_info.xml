@@ -11,22 +11,18 @@
     tools:context="com.appmon.entermon.UserInfoActivity"
     android:orientation="vertical"
     android:weightSum="1">
-
-    <SearchView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="top"
-        android:queryHint="找电影、影人、影院" />
     <LinearLayout
         android:layout_marginTop="10dp"
 
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:weightSum="1">
 
         <ImageView
             android:id="@+id/imageView"
             android:layout_width="60dp"
             android:layout_height="60dp"
+            android:layout_weight="0.03"
             android:src="@drawable/touxiang" />
 
         <TextView
@@ -35,7 +31,8 @@
             android:layout_height="match_parent"
             android:textSize="28sp"
             android:text="Edision"
-            android:id="@+id/activity_user_name"/>
+            android:id="@+id/activity_user_name"
+            android:layout_weight="0.05" />
     </LinearLayout>
 
     <LinearLayout
@@ -48,7 +45,7 @@
             android:id="@+id/textView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Coins:"
+            android:text="Balance:"
             android:textSize="20sp" />
 
         <TextView
@@ -56,7 +53,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="15dp"
-            android:text="100 bits"
+            android:text="99 bits"
             android:textSize="18sp" />
     </LinearLayout>
 
@@ -64,14 +61,13 @@
 
         android:id="@+id/history"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"></ListView>
+        android:layout_height="329dp"
+        android:layout_weight="0.58"></ListView>
 
     <RadioGroup
         android:id="@+id/u_group"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="bottom"
         android:gravity="center"
         android:orientation="horizontal">
 
@@ -91,7 +87,6 @@
             android:id="@+id/u_shop"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:visibility="gone"
             android:text="商城" />
 
         <RadioButton

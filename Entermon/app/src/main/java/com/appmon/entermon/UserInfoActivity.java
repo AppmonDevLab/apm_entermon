@@ -24,13 +24,13 @@ public class UserInfoActivity extends AppCompatActivity {
         ListView listView = (ListView) findViewById(R.id.history);
         List<Map<String, Object>> u_list = new ArrayList<Map<String, Object>>();
         Map<String, Object> map = new HashMap<String, Object>();
-        map.put("name", "神奇女侠");
-        map.put("date", "昨晚19:30");
+        map.put("name", "movie");
+        map.put("date", "date");
         u_list.add(map);
 
         map = new HashMap<String, Object>();
-        map.put("name", "摔跤吧！爸爸");
-        map.put("date", "前天");
+        map.put("name", "movie2");
+        map.put("date", "date2");
         u_list.add(map);
 //        listView.setAdapter(new ArrayAdapter<String>(this, R.layout.activity_user_in_fo_, getData()));
 //        setContentView(listView);

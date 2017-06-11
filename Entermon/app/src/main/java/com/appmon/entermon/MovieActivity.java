@@ -44,18 +44,6 @@ public class MovieActivity extends AppCompatActivity {
         map.put("info", "精英淑女变主妇，心灵创伤要呵护");
         map.put("img", R.drawable.meihaodeyiwai);
         m_list.add(map);
-
-        map = new HashMap<String, Object>();
-        map.put("title", "神奇女侠");
-        map.put("info", "DC漫画完美一姐——神奇女侠");
-        map.put("img", R.drawable.shenqinvxia);
-
-        map = new HashMap<String, Object>();
-        map.put("title", "摔跤吧！爸爸");
-        map.put("info", "印度排名第一的电影，全球口碑已炸裂");
-        map.put("img", R.drawable.shuaijiaoba);
-
-        m_list.add(map);
         SimpleAdapter adapter = new SimpleAdapter(MovieActivity.this,m_list,R.layout.new_item,
                 new String[]{"title","info","img"},
                 new int[]{R.id.title,R.id.info,R.id.img});
@@ -73,7 +61,7 @@ public class MovieActivity extends AppCompatActivity {
             @Override
             public void onCheckedChanged(RadioGroup RGroup, int i) {
                 if (rb_home.getId() == i) {
-                    Toast.makeText(MovieActivity.this, "movie", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(MovieActivity.this, "moive", Toast.LENGTH_SHORT).show();
 //                   Toast.makeText(getApplicationContext(),msg,Toast.LENGTH_LONG).show(); 
                 }
                 if (rb_theatre.getId() == i) {

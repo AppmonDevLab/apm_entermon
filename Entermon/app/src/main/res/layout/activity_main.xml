@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_main"
     android:layout_width="match_parent"
@@ -9,52 +8,35 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    android:orientation="vertical"
-    android:gravity="center"
     tools:context="com.appmon.entermon.MainActivity"
     >
 
-
-    <!--<Button-->
-        <!--android:layout_width="140dp"-->
-        <!--android:layout_height="wrap_content"-->
-        <!--android:layout_marginTop="60dp"-->
-        <!--android:textAllCaps="false"-->
-        <!--android:text="To Moive"-->
-        <!--android:id="@+id/movie_bt"-->
-        <!--android:layout_alignParentTop="true"-->
-        <!--android:layout_centerHorizontal="true" />-->
-    <!--<Button-->
-        <!--android:layout_width="140dp"-->
-        <!--android:layout_height="wrap_content"-->
-        <!--android:textAllCaps="false"-->
-        <!--android:text="To Login"-->
-        <!--android:id="@+id/login_bt"-->
-        <!--android:layout_marginTop="160dp"-->
-        <!--android:layout_centerHorizontal="true"-->
-         <!--/>-->
-
-    <!--<Button-->
-        <!--android:id="@+id/other_bt"-->
-        <!--android:layout_width="140dp"-->
-        <!--android:layout_height="wrap_content"-->
-        <!--android:textAllCaps="false"-->
-        <!--android:text="To Other"-->
-        <!--android:layout_centerVertical="true"-->
-        <!--android:layout_centerHorizontal="true" />-->
-
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="wrap_content"
+    <Button
+        android:layout_width="140dp"
         android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:textAllCaps="false"
+        android:text="To Moive"
+        android:id="@+id/movie_bt"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+    <Button
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        android:text="To Login"
+        android:id="@+id/login_bt"
+        android:layout_marginTop="160dp"
         android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
-        app:srcCompat="@drawable/entermon" />
+         />
 
-    <TextView
-        android:layout_width="match_parent"
+    <Button
+        android:id="@+id/other_bt"
+        android:layout_width="140dp"
         android:layout_height="wrap_content"
-        android:gravity="center"
-        android:text="娱梦影券"
-        android:textSize="20dp" />
-</LinearLayout>
+        android:textAllCaps="false"
+        android:text="To Other"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

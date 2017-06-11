@@ -13,49 +13,44 @@
     android:weightSum="1">
     <SearchView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="top"
-        android:queryHint="找电影、影人、影院" />
+        android:layout_height="wrap_content"></SearchView>
     <ListView
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:id="@+id/list">
+        android:layout_height="364dp"
+        android:id="@+id/theatre_list"
+        android:layout_weight="0.9">
     </ListView>
 
     <RadioGroup
-        android:id="@+id/rg_group"
-
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_weight="0.2"
+        android:orientation="horizontal"
         android:gravity="center"
-        android:orientation="horizontal">
-
+        >
         <RadioButton
-            android:id="@+id/rb_home"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="首页" />
-
+            android:text="首页"
+            />
         <RadioButton
-            android:id="@+id/rb_theatre"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="影院" />
-
+            android:text="首页"
+            android:layout_marginLeft="20dp"
+            />
         <RadioButton
-            android:id="@+id/rb_shop"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:visibility="gone"
-            android:text="商城" />
-
+            android:text="首页"
+            android:layout_marginLeft="20dp"
+            />
         <RadioButton
-            android:id="@+id/rb_me"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="我的" />
-
+            android:text="首页"
+            android:layout_marginLeft="20dp"
+            />
 
     </RadioGroup>
 </LinearLayout>
