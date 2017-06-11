@@ -1,1 +1,1 @@
-java -cp .\bin\ SimpleHTTPServer
+java -cp .\bin\ HTTPServer
