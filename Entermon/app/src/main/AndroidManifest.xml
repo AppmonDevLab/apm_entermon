@@ -18,10 +18,15 @@
         <activity
             android:name=".LoginActivity"
             android:label="@string/title_activity_login"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".MovieActivity" />
-        <activity android:name=".TheatreActivity" />
-        <activity android:name=".UserInfoActivity"></activity>
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustPan"/>
+        <activity android:name=".MovieActivity"
+            android:windowSoftInputMode="adjustPan"/>
+        <activity android:name=".TheatreActivity"
+            android:windowSoftInputMode="adjustPan"/>
+        <activity
+            android:name=".UserInfoActivity"
+            android:windowSoftInputMode="adjustPan" />
     </application>
 
 </manifest>
