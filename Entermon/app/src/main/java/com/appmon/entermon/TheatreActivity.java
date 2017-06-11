@@ -20,7 +20,7 @@ public class TheatreActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_movie);
+        setContentView(R.layout.activity_theatre);
         List<Map<String, Object>> t_list = new ArrayList<Map<String, Object>>();
         Map<String, Object> map = new HashMap<String, Object>();
         map.put("title", "星美国际影城(奥园广场店)");
@@ -44,7 +44,7 @@ public class TheatreActivity extends AppCompatActivity {
         RadioGroup radioGroup = (RadioGroup) findViewById(R.id.rg_group);
         final RadioButton rb_home = (RadioButton) findViewById(R.id.rb_home);
 //        final RadioButton rb_theatre = (RadioButton) findViewById(R.id.rb_theatre);
-        final RadioButton rb_shop = (RadioButton) findViewById(R.id.rb_shop);
+//        final RadioButton rb_shop = (RadioButton) findViewById(R.id.rb_shop);
         final RadioButton rb_me = (RadioButton) findViewById(R.id.rb_me);
 
         radioGroup.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
@@ -56,10 +56,10 @@ public class TheatreActivity extends AppCompatActivity {
                     startActivity(intent);
 //                   Toast.makeText(getApplicationContext(),msg,Toast.LENGTH_LONG).show(); 
                 }
-                if (rb_shop.getId() == i) {
-                    Toast.makeText(TheatreActivity.this, "moive", Toast.LENGTH_SHORT).show();
-//                   Toast.makeText(getApplicationContext(),msg,Toast.LENGTH_LONG).show(); 
-                }
+//                if (rb_shop.getId() == i) {
+//                    Toast.makeText(TheatreActivity.this, "moive", Toast.LENGTH_SHORT).show();
+////                   Toast.makeText(getApplicationContext(),msg,Toast.LENGTH_LONG).show(); 
+//                }
                 if (rb_me.getId() == i) {
 //                    Toast.makeText(TheatreActivity.this, "moive", Toast.LENGTH_SHORT).show();
 //                   Toast.makeText(getApplicationContext(),msg,Toast.LENGTH_LONG).show(); 
